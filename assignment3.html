@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+#userdetails{
+	margin-left:150px;
+	margin-right:700px;
+	margin-top:100px;
+	background-color:rgba(80, 166, 206, 0.37);
+}
+.input{
+	margin-left:100px;
+}
+.details{
+	border:1px solid green;
+	margin:10,10,10,10;
+	background-color:rgba(156, 116, 107, 0.25);;
+}
+#submit{
+	margin-left:175px;
+}
+p{
+	margin-left:30px;
+}
+</style>
+<body>
+
+<form action="#">
+	<fieldset id="userdetails">
+		<h4>Step 1:Your Details</h4>
+		<div class="details">
+			<p>Name:<input type="text" name="name" class="input"></p>
+		</div>
+		<br>
+		<div class="details">
+			<p>Email:<input type="email" name="email" class="input"></p>
+		</div>
+		<br>
+		<div class="details">
+			<p>Phone:<input type="number" name="phone" class="input"></p>
+	    </div>
+		<h4>Step 2:Delivery Address</h4>
+			<p>Address:<textarea rows="4" cols="50" name="address"></textarea></p>
+		<br>
+		<div class="details">
+			<p>Postcode:<input type="number" name="postcode" class="input"></p>
+		</div>
+		<br>
+		<div class="details">
+			<p>Country:<input type="number" name="country" class="input"></p>
+	    </div>
+		<h4>Step 3:Card Details</h4>
+		<div class="details">
+			<p>Card Type:<br><br>
+			<input type="radio" name="visa"><img src="visa.gif" alt="visa" width="20" height="20" align="center">Visa
+			<input type="radio" name="amxp"><img src="american_express.jpeg" alt="american express" width="20" height="20" align="center">American Express
+			<input type="radio" name="mast"><img src="mastercard.png" alt="master card" width="20" height="20" align="center">Master Card</p>
+		</div>
+		<br>
+		<div class="details">
+			<p>Card Number:<input type="number" name="cardnumber" class="input"></p>
+		</div>
+		<br>
+		<div class="details">
+			<p>Security Code:<input type="number" name="securitycode" class="input"></p>
+	    </div>
+		<br>
+		<div class="details">
+			<p>Name on Card:<input type="text" name="name" placeholder="exact name as on the card" class="input"></p>
+	    </div>
+		<br>
+		<input id="submit" type="submit" name="submit" value="Buy It">
+	</fieldset>
+</form>
+
+</body>
+</html>
