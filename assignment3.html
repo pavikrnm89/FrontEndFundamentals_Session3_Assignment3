@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
+<script type="text/javascript" src="https://gc.kis.scr.kaspersky-labs.com/C2C51CCB-B9DD-6E47-9269-B81CA53517E3/main.js" charset="UTF-8"></script></head>
 <style>
 #userdetails{
 	margin-left:150px;
@@ -11,6 +11,7 @@
 }
 .input{
 	margin-left:100px;
+	width:200px;
 }
 .details{
 	border:1px solid green;
@@ -19,9 +20,18 @@
 }
 #submit{
 	margin-left:175px;
+    border-radius: 25px;
+    background: blue;
+    padding: 16px; 
+    width: 84px;
+    height: 2px;    
+	align:center;
 }
 p{
 	margin-left:30px;
+}
+.formfield * {
+  vertical-align: top;
 }
 </style>
 <body>
@@ -41,7 +51,12 @@ p{
 			<p>Phone:<input type="number" name="phone" class="input"></p>
 	    </div>
 		<h4>Step 2:Delivery Address</h4>
-			<p>Address:<textarea rows="4" cols="50" name="address"></textarea></p>
+		<div class="details">
+			<p class="formfield"><label for="textarea">Address:</label>
+			<textarea id="textarea" rows="3" cols="30" class="input"></textarea>
+			</p>
+		</div>
+		
 		<br>
 		<div class="details">
 			<p>Postcode:<input type="number" name="postcode" class="input"></p>
